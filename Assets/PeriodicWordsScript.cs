@@ -192,7 +192,7 @@ public class PeriodicWordsScript : MonoBehaviour
 
             while (timer < 0.1f)
             {
-                yield return null;
+                yield return "trycancel Periodic Words: Command cancelled.";
                 timer += Time.deltaTime;
             }
         }
