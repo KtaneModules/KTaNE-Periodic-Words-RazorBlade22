@@ -44,9 +44,10 @@ public class PeriodicWordsScript : MonoBehaviour
 
         ButtonAnims = new Coroutine[Buttons.Length];
         StartPos = Buttons[0].transform.localPosition.y;
-        Texts[0].text = "PERIODIC WDS.";
+        Texts[0].text = "PERIODIC WORDS";
         Texts[1].text = "";
         Texts[2].text = "0";
+        Texts[3].text = "";
         for (int i = 0; i < Buttons.Length; i++)
         {
             int x = i;
@@ -69,6 +70,7 @@ public class PeriodicWordsScript : MonoBehaviour
         {
             Input = (Input + Buttons[pos].GetComponentInChildren<TextMesh>().text).Wrap(27);
             Texts[1].text = Input;
+            Texts[3].text = Input.Replace("\n", "").Select((x, ix) => ((ix / 3) % 2) == 0 ? x : '-').Join("").Wrap(27).Replace("-", " ");
         }
         else if (pos == 10)
         {
@@ -99,6 +101,7 @@ public class PeriodicWordsScript : MonoBehaviour
                             Texts[0].text = "MODULE SOLVED";
                             Texts[1].text = "";
                             Texts[2].text = "GG";
+                            Texts[3].text = "";
                             Solved = true;
                         }
                         else
@@ -108,6 +111,7 @@ public class PeriodicWordsScript : MonoBehaviour
                             Texts[0].text = Words[Stage];
                             Texts[1].text = "";
                             Texts[2].text = (Stage + 1).ToString();
+                            Texts[3].text = "";
                             Debug.LogFormat("[Periodic Words #{0}] The displayed word for stage {1} is {2}.", _moduleID, Stage + 1, Words[Stage]);
                         }
                     }
@@ -128,6 +132,7 @@ public class PeriodicWordsScript : MonoBehaviour
         {
             Input = "";
             Texts[1].text = "";
+            Texts[3].text = "";
         }
     }
 
@@ -162,6 +167,7 @@ public class PeriodicWordsScript : MonoBehaviour
         Module.HandleStrike();
         Input = "";
         Texts[1].text = "";
+        Texts[3].text = "";
     }
 
 #pragma warning disable 414

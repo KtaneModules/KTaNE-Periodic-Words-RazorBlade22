@@ -11,18 +11,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
   m_Name: ModConfig
   m_EditorClassIdentifier: 
-  id: periodicWordsRB
-  title: Periodic Words
+  id: periodicWordModulesRB
+  title: Periodic Word Modules
   author: RazorBlade
   description: 'Remember that game we all used to play when we were bored in chemistry
     class? Now that game is on a bomb.
 
 
-    This is my second module I have uploaded. I am planning on making this one into
-    a series of modules. I am not exactly sure if that will happen though.
+    This is a mod pack that includes two modules:
+
+    *Periodic Words
+
+    *Scrambled Periodic Words
 
 
-    Once again, thanks to GhostSalt for helping me with this module.
+    Once again, thanks to GhostSalt for helping me with these modules.
 
 
     This modules also has TP support included.'
