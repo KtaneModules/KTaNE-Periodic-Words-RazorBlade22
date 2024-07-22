@@ -147,6 +147,8 @@ public class ScrambledPeriodicWordsScript : MonoBehaviour
             else if (!Words.Contains(InputWord))
             {
                 Strike("[Scrambled Periodic Words #{0}] The inputted word is not a word. Strike!");
+                Debug.LogFormat("[Scambled Periodic Words #{0}] If you feel this strike is an error, please contact RazorBlade on Telegram, @RazorBlade_Wolfe.", _moduleID);
+                Debug.LogFormat("[Scambled Periodic Words #{0}] Or GhostSalt on Discord, ghostsalt12", _moduleID);
             }
             else
             {

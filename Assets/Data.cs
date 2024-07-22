@@ -139,7 +139,7 @@ namespace PeriodicWords
             "CANS",
             "CAR",
             "CARE",
-            "CARESS",
+            "CARES",
             "CARNIVAL",
             "CARNIVALS",
             "CARS",
